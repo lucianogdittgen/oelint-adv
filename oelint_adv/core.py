@@ -85,7 +85,7 @@ def parse_configfile() -> Dict:
 
 def group_files(files: Iterable[str], mode: str) -> List[Tuple[List[str], List[str], Dict]]:
     # in case multiple bb files are passed at once we might need to group them to
-    # avoid having multiple, potentially wrong hits of include files shared across
+    # avoid having multiple, potentially wrong hits of include files shared accross
     # the bb files in the stash
     res = {}
     for f in files:
